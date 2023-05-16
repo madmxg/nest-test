@@ -1,0 +1,18 @@
+{
+	"extends": ["@tsconfig/node18/tsconfig.json", "./tsconfig.strict.json"],
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"preserveSymlinks": true,
+		"incremental": true,
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"outDir": ".build",
+		"baseUrl": "src",
+		"paths": {
+			"src/*": ["*"]
+		}
+	},
+	"include": ["src/**/*.ts"]
+}
